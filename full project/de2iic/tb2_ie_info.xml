@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for Altera-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<QuartusExecution>
+		<AddressBits>64</AddressBits>
+		<ApplicationError>
+		<Bits>64</Bits>
+		<CommandLine>quartus</CommandLine>
+		<ErrorMessage>Uncaught C++ Exception</ErrorMessage>
+		<Line>0</Line>
+		<Platform>windows</Platform>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x7ffc1fe58b9b: (RaiseException + 0x6b)
+	 0x5bd904d5: (?_is_exception_typeof@@YAHAEBVtype_info@@PEAU_EXCEPTION_POINTERS@@@Z + 0x231)
+	0x7ffc22983572: (RtlCaptureContext + 0x3c2)
+	 0x5aa0a7c1: (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x71)
+	 0x5ac49d74: (?close_helper@QWidgetPrivate@@QEAA_NW4CloseMode@1@@Z + 0xa4)
+	 0x5ac646c0: (?restoreOverrideCursor@QApplication@@SAXXZ + 0x10b0)
+	0x7ffc201c250c: (DispatchMessageW + 0x15c)
+	0x7ffc201c3b01: (GetSysColorBrush + 0x3d1)
+	0x7ffc201c3bcd: (GetSysColorBrush + 0x49d)
+	0x7ffc22983033: (KiUserCallbackDispatcher + 0x23)
+	0x7ffc201c1029: (InvalidateRect + 0x19)
+	0x7ffc201c5311: (GetClassNameW + 0x141)
+	0x7ffc201c40cd: (CallWindowProcW + 0x3ed)
+	0x7ffc1e6ef39b: (GetThemeBool + 0x24b)
+	0x7ffc1e718e36: (Ordinal76 + 0x106)
+	0x7ffc1e6eecea: (Ordinal43 + 0xfa)
+	0x7ffc1e6b1980: (DllCanUnloadNow + 0x820)
+	0x7ffc201c4055: (CallWindowProcW + 0x375)
+	 0x5b0d9b17: (?sendEvent@QInputContext@@QEAAXAEBVQInputMethodEvent@@@Z + 0x2e7)
+	 0x5ac65ebf: (?restoreOverrideCursor@QApplication@@SAXXZ + 0x28af)
+	0x7ffc201c3fef: (CallWindowProcW + 0x30f)
+	0x7ffc201c2366: (NotifyWinEvent + 0x236)
+	 0x5aa32f69: (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3b9)
+	 0x5ac63564: (?translateTouchEvent@QApplicationPrivate@@QEAA_NAEBUtagMSG@@@Z + 0x884)
+	 0x5aa09cf0: (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x230)
+	 0x5aa0e5ff: (?exec@QCoreApplication@@SAHXZ + 0xdf)
+	0x7ff61551108e:
+	0x7ffbed344c78: (?msg_exe_fini@@YAXXZ + 0x58)
+	0x7ffbed3453bc: (?msg_exe_fini@@YAXXZ + 0x79c)
+	0x7ffbed3f1584: (??1MEM_SEGMENT_INTERNAL@@UEAA@XZ + 0x194)
+	0x7ffbed345f9f: (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0x8f)
+	0x7ff615511ab2:
+	0x7ff6155113de:
+	0x7ffc200813d1: (BaseThreadInitThunk + 0x21)
+	0x7ffc22905443: (RtlUserThreadStart + 0x33)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<Compilation>
+			<CompileID>0</CompileID>
+			<DeviceFamily/>
+			<IncrementalCompilation/>
+			<TopLevelEntityName/>
+		</Compilation>
+		<DateInvoked>2015/07/11 20:14:41</DateInvoked>
+		<ElapsedTime>3578</ElapsedTime>
+		<IP>127.0.0.1</IP>
+		<IsInternal>false</IsInternal>
+		<IsQt>true</IsQt>
+		<License>
+			<Edition>Web Edition</Edition>
+			<LicenseHostID/>
+		</License>
+		<Machine>
+			<CPUCountLogical>4</CPUCountLogical>
+			<CPUCountPhysical>1</CPUCountPhysical>
+			<CPUSpeed>2295</CPUSpeed>
+			<Hostname>LABOOOOX-PC</Hostname>
+			<NIC>
+				<Address>00ff0269501e</Address>
+			</NIC>
+			<NIC>
+				<Address>5c514f7b2586</Address>
+			</NIC>
+			<NIC>
+				<Address>5c514f7b2583</Address>
+			</NIC>
+			<NIC>
+				<Address>5e514f7b2582</Address>
+			</NIC>
+			<NIC>
+				<Address>5c514f7b2582</Address>
+			</NIC>
+			<OS>Windows 7</OS>
+			<OSAddressBits>64</OSAddressBits>
+			<OSVersion>6.2</OSVersion>
+			<Platform>windows</Platform>
+			<ScreenResolution>unknown</ScreenResolution>
+			<TotalPhysicalRAM>8097</TotalPhysicalRAM>
+			<TotalVirtualRAM>8192</TotalVirtualRAM>
+		</Machine>
+		<Name>quartus</Name>
+		<PeakMemoryUsed>0</PeakMemoryUsed>
+		<ProjectRevision>
+			<ProjectName/>
+			<Revision/>
+		</ProjectRevision>
+		<QuartusInstallation>
+			<InstallationID>75064541466451.142712741116292</InstallationID>
+			<Version>
+				<Build>232</Build>
+				<BuildSite>SJ</BuildSite>
+				<BuildSuffix/>
+				<Edition>Web Edition</Edition>
+				<ServicePack>0</ServicePack>
+				<VersionNumber>13</VersionNumber>
+			</Version>
+		</QuartusInstallation>
+		<QuartusUser>
+			<AlteraUserName/>
+			<FAEContactName/>
+			<TalkbackStatus>
+				<DateSet/>
+				<TalkbackOn>true</TalkbackOn>
+			</TalkbackStatus>
+			<UserID>1098745414630.143150765302796</UserID>
+			<UserName>vaio</UserName>
+		</QuartusUser>
+	</QuartusExecution>
+	<SchemaVersion>schema_2013-01-18</SchemaVersion>
+</ProgramExecution>
+

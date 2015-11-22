@@ -1,0 +1,163 @@
+/*
+ * "Hello World" example.
+ *
+ * This example prints 'Hello from Nios II' to the STDOUT stream. It runs on
+ * the Nios II 'standard', 'full_featured', 'fast', and 'low_cost' example
+ * designs. It runs with or without the MicroC/OS-II RTOS and requires a STDOUT
+ * device in your system's hardware.
+ * The memory footprint of this hosted application is ~69 kbytes by default
+ * using the standard reference design.
+ *
+ * For a reduced footprint version of this template, and an explanation of how
+ * to reduce the memory footprint for a given application, see the
+ * "small_hello_world" template.
+ *
+ */
+
+#include <stdio.h>
+#include <system.h>
+#include <string.h>
+#include <stdlib.h>
+#include <io.h>
+#include "oc_i2c_master.h"
+
+#define LCD_WR_DATA_REG  2
+#define LCD_WR_COMMAND_REG 0
+#define LCD_BASE LCD_16207_0_BASE
+#define IIC_BASE 0x21018
+
+#define REG_X   0x32
+#define REG_Y   0x34
+#define REG_Z   0x36
+
+void lcd_init( void ) {
+	/* Set Function Code Four Times -- 8-bit, 2 line, 5x7 mode */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x38 );
+	usleep(4100); /* Wait 4.1 ms */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x38 );
+	usleep(100); /* Wait 100 us */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x38 );
+	usleep(5000); /* Wait 5.0 ms */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x38 );
+	usleep(100);
+	/* Set Display to OFF */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x08 );
+	usleep(100);
+	/* Set Display to ON */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x0C );
+	usleep(100);
+	/* Set Entry Mode -- Cursor increment, display doesn't shift */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x06 );
+	usleep(100);
+	/* Set the cursor to the home position */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x02 );
+	usleep(2000);
+	/* Clear the display */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x01 );
+	usleep(2000);
+}
+
+void lcd_clear( void ) {
+	/* Set the cursor to the home position */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x02 );
+	usleep(2000);
+	/* Clear the display */
+	IOWR( LCD_BASE, LCD_WR_COMMAND_REG, 0x01 );
+	usleep(2000);
+}
+
+void lcd_putchar ( char c ) {
+	/* Write char on LCD */
+	IOWR(LCD_BASE, LCD_WR_DATA_REG, c);
+	usleep(2000);
+}
+
+void lcd_puts ( const char* string ) {
+	int i;
+	for(i=0;i<strlen(string);i++){
+		lcd_putchar(string[i]);
+	}
+}
+
+void i2c_init(){
+	IOWR(IIC_BASE, OC_I2C_PRER_LO, 0x63);
+	IOWR(IIC_BASE, OC_I2C_PRER_HI, 0x00);
+	IOWR(IIC_BASE, OC_I2C_CTR, OC_I2C_EN);
+}
+
+unsigned char i2c_check_rxAck(){
+	return !(IORD(IIC_BASE, OC_I2C_SR) & OC_I2C_RXACK);
+}
+
+unsigned char i2c_write(unsigned char data, unsigned char start, unsigned char stop)
+{
+	lcd_putchar((IORD(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP == 1)+'0');
+    IOWR(IIC_BASE, OC_I2C_TXR, data);
+    if(!start && !stop)
+    	IOWR(IIC_BASE, OC_I2C_CR, OC_I2C_WR);
+    else if(start)
+    	IOWR(IIC_BASE, OC_I2C_CR, OC_I2C_WR | OC_I2C_STA);
+    else if(stop)
+    	IOWR(IIC_BASE, OC_I2C_CR, OC_I2C_WR | OC_I2C_STO);
+    lcd_putchar((IORD(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP == 1)+'0');
+    while (IORD(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP);
+    return i2c_check_rxAck();
+}
+
+unsigned char i2c_read(unsigned char start, unsigned char stop, unsigned char ack)
+{
+	unsigned char status = OC_I2C_RD | start?OC_I2C_STA:0x00 | stop?OC_I2C_STO:0x00 | ack?0:OC_I2C_ACK;
+	IOWR(IIC_BASE, OC_I2C_CR, status);
+	while (IORD(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP);
+	return IORD(IIC_BASE, OC_I2C_RXR);
+}
+
+int adxl_read2(unsigned char reg){
+    unsigned char DY0,DY1;
+    i2c_write(0xA6,1,0);
+    i2c_write(reg,0,0);
+    i2c_write(0xA7,1,0);
+    DY0 = i2c_read(0,0,1);
+    DY1 = i2c_read(0,1,0);
+    return (DY1<<8 | DY0);
+}
+
+unsigned char adxl_read(unsigned char reg){
+    unsigned char DY0;
+    i2c_write(0xA6,1,0);
+	i2c_write(reg,0,0);
+	i2c_write(0xA7,1,0);
+	DY0 = i2c_read(0,1,0);
+	return DY0;
+}
+
+void adxl_write(unsigned char reg, unsigned char data){
+	i2c_write(0xA6,1,0);
+	i2c_write(reg,0,0);
+	i2c_write(data,0,1);
+}
+
+int main()
+{
+	int DX=0,DY=0,DZ=0;
+	char lcd_buf[32];
+
+	printf("Hello from Nios II!\n");
+	lcd_init();
+	i2c_init();
+	adxl_write(0x2D, 0x08); //MEASURE ON
+	/*while(1){
+		lcd_clear();
+		DX = adxl_read2(REG_X);
+		DY = adxl_read2(REG_Y);
+		DZ = adxl_read2(REG_Z);
+		//sprintf(lcd_buf, "%d\t%d\n%d", DX,DY,DZ);
+		lcd_putchar(DY/10000%10 + '0');
+		lcd_putchar(DY/1000%10 + '0');
+		lcd_putchar(DY/100%10 + '0');
+		lcd_putchar(DY/10%10 + '0');
+		lcd_putchar(DY%10 + '0');
+		usleep(500);
+	}*/
+	return 0;
+}

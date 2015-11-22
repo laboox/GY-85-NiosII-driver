@@ -1,0 +1,88 @@
+/*
+ * itg3205.h
+ *
+ *  Created on: Jul 11, 2015
+ *      Author: Sina Labbaf
+ */
+
+#ifndef ITG3205_H_
+#define ITG3205_H_
+
+#include "i2c_controller.h"
+// Gyroscope ITG3200
+#define GYRO_W 0xD0
+#define GYRO_R 0xD1
+
+#define G_SMPLRT_DIV 0x15
+#define G_DLPF_FS 0x16
+#define G_INT_CFG 0x17
+#define G_PWR_MGM 0x3E
+#define G_TO_READ 8 // 2 bytes for each axis x, y, z
+// offsets are chip specific.
+short g_offx = 0;
+short g_offy = 0;
+short g_offz = 0;
+short hx, hy, hz, turetemp;
+
+//////////// Transmission Functions: ///////////////
+
+void writeTo(unsigned char address, unsigned char val) {
+	i2c_write(GYRO_W,1,0); //start transmission to ACC
+	i2c_write(address,0,0);        // send register address
+	i2c_write(val,0,1);        // send value to write
+}
+//reads num bytes starting from address register on ACC in to buff array
+void readFrom(unsigned char address, int num, unsigned char buff[]) {
+	int i = 0;
+	i2c_write(GYRO_W,1,0); //start transmission to ACC
+	i2c_write(address,0,1);        //sends address to read from
+
+	i2c_write(GYRO_R,1,0); //start transmission to ACC
+
+	for (i=0;i<num-1;i++){
+		buff[i] = i2c_read(0,0,1); // receive a byte
+	}
+	buff[5] = i2c_read(0,1,0); // receive a byte
+}
+
+////////// GYROSCOPE INITIALIZATION //////////
+void initGyro()
+{
+	/*****************************************
+	* ITG 3200
+	* power management set to:
+	* clock select = internal oscillator
+	* no reset, no sleep mode
+	* no standby mode
+	* sample rate to = 125Hz
+	* parameter to +/- 2000 degrees/sec
+	* low pass filter = 5Hz
+	* no interrupt
+	******************************************/
+	writeTo(G_PWR_MGM, 0x00);
+	writeTo(G_SMPLRT_DIV, 0x07); // EB, 50, 80, 7F, DE, 23, 20, FF
+	writeTo(G_DLPF_FS, 0x1E); // +/- 2000 dgrs/sec, 1KHz, 1E, 19
+	writeTo(G_INT_CFG, 0x00);
+}
+
+void getGyroscopeData(short * result)
+{
+	/**************************************
+	Gyro ITG-3200 I2C
+	registers:
+	temp MSB = 1B, temp LSB = 1C
+	x axis MSB = 1D, x axis LSB = 1E
+	y axis MSB = 1F, y axis LSB = 20
+	z axis MSB = 21, z axis LSB = 22
+	*************************************/
+	int regAddress = 0x1B;
+	int temp, x, y, z;
+	unsigned char buff[G_TO_READ];
+	readFrom(regAddress, G_TO_READ, buff); //read the gyro data from the ITG3200
+	hx = result[0] = ((buff[2] << 8) | buff[3]) + g_offx;
+	hy = result[1] = ((buff[4] << 8) | buff[5]) + g_offy;
+	hz = result[2] = ((buff[6] << 8) | buff[7]) + g_offz;
+	temp = result[3] = (buff[0] << 8) | buff[1]; // temperature
+}
+
+#endif /* ITG3205_H_ */

@@ -1,0 +1,56 @@
+/*
+ * i2c_controller.c
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: Sina Labbaf
+ */
+
+#include "i2c_controller.h"
+
+/*
+ * initialize of Opencores' I2C controller
+ * Pre-scale value can change bye the following formula:
+ * 	value = ((base frequency)/(5 * I2C speed)) + 1
+ */
+void i2c_init(){
+	// Pre-scale set to 100KHz for 50 MHz nios
+	IOWR_8DIRECT(IIC_BASE, OC_I2C_PRER_LO, 0x64);
+	IOWR_8DIRECT(IIC_BASE, OC_I2C_PRER_HI, 0x00);
+
+	// enable I2C controller
+	IOWR_8DIRECT(IIC_BASE, OC_I2C_CTR, OC_I2C_EN);
+}
+
+/*
+ * I2C write function
+ */
+void i2c_write(unsigned char data, unsigned char start, unsigned char stop)
+{
+	IOWR_8DIRECT(IIC_BASE, OC_I2C_TXR, data);
+    if(!start && !stop)
+    	IOWR_8DIRECT(IIC_BASE, OC_I2C_CR, OC_I2C_WR);
+    else if(start)
+    	IOWR_8DIRECT(IIC_BASE, OC_I2C_CR, OC_I2C_WR | OC_I2C_STA);
+    else if(stop)
+    	IOWR_8DIRECT(IIC_BASE, OC_I2C_CR, OC_I2C_WR | OC_I2C_STO);
+    while (IORD_8DIRECT(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP);
+}
+
+/*
+ * By this function write ACK from slave can be check
+ */
+char i2c_check_rxAck(){
+	return !(IORD_8DIRECT(IIC_BASE, OC_I2C_SR) & OC_I2C_RXACK);
+}
+
+/*
+ * I2C write function
+ */
+unsigned char i2c_read(unsigned char start, unsigned char stop, unsigned char ack)
+{
+	unsigned char status = OC_I2C_RD | (start?OC_I2C_STA:0x00) | (stop?OC_I2C_STO:0x00) | (ack?0:OC_I2C_ACK);
+	IOWR_8DIRECT(IIC_BASE, OC_I2C_CR, status);
+	while (IORD_8DIRECT(IIC_BASE, OC_I2C_SR) & OC_I2C_TIP);
+	usleep(1000);
+	return IORD_8DIRECT(IIC_BASE, OC_I2C_RXR);
+}

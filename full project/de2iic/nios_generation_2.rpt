@@ -1,0 +1,148 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/UT/UTbot/Projects/de2iic/ --output-directory=C:/UT/UTbot/Projects/de2iic/nios/ --report-file=bsf:C:/UT/UTbot/Projects/de2iic/nios.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/UT/UTbot/Projects/de2iic/nios.qsys
+Progress: Loading de2iic/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding iic_controller [iic_controller 1.0]
+Progress: Parameterizing module iic_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios.iic_controller.iic_master_mem: Signal chipselect appears 2 times (only once is allowed)
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/UT/UTbot/Projects/de2iic/ --output-directory=C:/UT/UTbot/Projects/de2iic/nios/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/UT/UTbot/Projects/de2iic/nios.sopcinfo --report-file=html:C:/UT/UTbot/Projects/de2iic/nios.html --report-file=qip:C:/UT/UTbot/Projects/de2iic/nios/synthesis/nios.qip --report-file=cmp:C:/UT/UTbot/Projects/de2iic/nios.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/UT/UTbot/Projects/de2iic/nios.qsys --language=VERILOG
+Progress: Loading de2iic/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding iic_controller [iic_controller 1.0]
+Progress: Parameterizing module iic_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: nios.iic_controller.iic_master_mem: Signal chipselect appears 2 times (only once is allowed)
+Info: nios: Generating nios "nios" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 24 connections
+Info: No custom instruction connections, skipping transform 
+Warning: Translator iic_controller_iic_master_mem_translator failed to match interface iic_controller.iic_master_mem
+Info: merlin_translator_transform: After transform: 13 modules, 52 connections
+Info: merlin_domain_transform: After transform: 30 modules, 161 connections
+Info: merlin_router_transform: After transform: 39 modules, 197 connections
+Info: merlin_traffic_limiter_transform: After transform: 41 modules, 207 connections
+Info: merlin_burst_transform: After transform: 42 modules, 211 connections
+Info: reset_adaptation_transform: After transform: 43 modules, 166 connections
+Info: merlin_network_to_switch_transform: After transform: 59 modules, 200 connections
+Info: merlin_width_transform: After transform: 61 modules, 206 connections
+Info: limiter_update_transform: After transform: 61 modules, 208 connections
+Info: merlin_mm_transform: After transform: 61 modules, 208 connections
+Info: merlin_interrupt_mapper_transform: After transform: 62 modules, 211 connections
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator:avalon_anti_slave_0:av_chipselect (chipselect)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_burstcount (burstcount)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_lock (lock)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_read (read)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_debugaccess (debugaccess)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_byteenable (byteenable)"
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_translator_avalon_anti_slave_0_agent:av:av_readdatavalid (readdatavalid)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_burstcount (burstcount)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_lock (lock)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_read (read)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_readdatavalid (readdatavalid)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_debugaccess (debugaccess)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for iic_controller_iic_master_mem_agent:m0:m0_byteenable (byteenable)"
+Error: nios: More than one port in iic_controller:iic_master_mem has role chipselect
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Error: Generation stopped, 56 or more modules remaining
+Info: nios: Done nios" with 31 modules, 1 files, 303853 bytes
+Error: ip-generate failed with exit code 1: 13 Errors, 74 Warnings
+Info: Finished: Create HDL design files for synthesis

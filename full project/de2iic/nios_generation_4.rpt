@@ -1,0 +1,175 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/UT/UTbot/Projects/de2iic/ --output-directory=C:/UT/UTbot/Projects/de2iic/nios/ --report-file=bsf:C:/UT/UTbot/Projects/de2iic/nios.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/UT/UTbot/Projects/de2iic/nios.qsys
+Progress: Loading de2iic/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding iic_controller [iic_controller 1.0]
+Progress: Parameterizing module iic_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/UT/UTbot/Projects/de2iic/ --output-directory=C:/UT/UTbot/Projects/de2iic/nios/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/UT/UTbot/Projects/de2iic/nios.sopcinfo --report-file=html:C:/UT/UTbot/Projects/de2iic/nios.html --report-file=qip:C:/UT/UTbot/Projects/de2iic/nios/synthesis/nios.qip --report-file=cmp:C:/UT/UTbot/Projects/de2iic/nios.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:/UT/UTbot/Projects/de2iic/nios.qsys --language=VERILOG
+Progress: Loading de2iic/nios.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_16207_0 [altera_avalon_lcd_16207 13.0.1.99.2]
+Progress: Parameterizing module lcd_16207_0
+Progress: Adding iic_controller [iic_controller 1.0]
+Progress: Parameterizing module iic_controller
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: nios: Generating nios "nios" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 6 modules, 24 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 13 modules, 52 connections
+Info: merlin_domain_transform: After transform: 26 modules, 138 connections
+Info: merlin_router_transform: After transform: 33 modules, 166 connections
+Info: merlin_traffic_limiter_transform: After transform: 35 modules, 176 connections
+Info: merlin_burst_transform: After transform: 36 modules, 180 connections
+Info: reset_adaptation_transform: After transform: 37 modules, 142 connections
+Info: merlin_network_to_switch_transform: After transform: 50 modules, 170 connections
+Info: merlin_width_transform: After transform: 52 modules, 176 connections
+Info: limiter_update_transform: After transform: 52 modules, 178 connections
+Info: merlin_mm_transform: After transform: 52 modules, 178 connections
+Info: merlin_interrupt_mapper_transform: After transform: 53 modules, 181 connections
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: nios: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys_0: Starting RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=nios_nios2_qsys_0 --dir=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0003_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0003_nios2_qsys_0_gen//nios_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2015.06.27 16:55:22 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)     Testbench
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)       Instruction fields
+Info: nios2_qsys_0: # 2015.06.27 16:55:23 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2015.06.27 16:55:24 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2015.06.27 16:55:24 (*)       Instruction controls
+Info: nios2_qsys_0: # 2015.06.27 16:55:24 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2015.06.27 16:55:24 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2015.06.27 16:55:27 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2015.06.27 16:55:31 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2015.06.27 16:55:33 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'nios_nios2_qsys_0'
+Info: nios2_qsys_0: "nios" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_onchip_memory2_0 --dir=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0004_onchip_memory2_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0004_onchip_memory2_0_gen//nios_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'nios_onchip_memory2_0'
+Info: onchip_memory2_0: "nios" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'nios_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_jtag_uart_0 --dir=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0005_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0005_jtag_uart_0_gen//nios_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'nios_jtag_uart_0'
+Info: jtag_uart_0: "nios" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: lcd_16207_0: Starting RTL generation for module 'nios_lcd_16207_0'
+Info: lcd_16207_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207 -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_lcd_16207/generate_rtl.pl --name=nios_lcd_16207_0 --dir=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0006_lcd_16207_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/vaio/AppData/Local/Temp/alt6613_2207072639556850235.dir/0006_lcd_16207_0_gen//nios_lcd_16207_0_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd_16207_0: Done RTL generation for module 'nios_lcd_16207_0'
+Info: lcd_16207_0: "nios" instantiated altera_avalon_lcd_16207 "lcd_16207_0"
+Info: iic_controller: "nios" instantiated iic_controller "iic_controller"
+Info: nios2_qsys_0_instruction_master_translator: "nios" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "nios" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "nios" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "nios" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "nios" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "nios" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "nios" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "nios" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "nios" instantiated altera_merlin_router "id_router_002"
+Info: id_router_004: "nios" instantiated altera_merlin_router "id_router_004"
+Info: limiter: "nios" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "nios" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "nios" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "nios" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "nios" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "nios" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/UT/UTbot/Projects/de2iic/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "nios" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file C:/UT/UTbot/Projects/de2iic/nios/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "nios" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file C:/UT/UTbot/Projects/de2iic/nios/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/UT/UTbot/Projects/de2iic/nios/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "nios" instantiated altera_irq_mapper "irq_mapper"
+Info: nios: Done nios" with 28 modules, 82 files, 1997905 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

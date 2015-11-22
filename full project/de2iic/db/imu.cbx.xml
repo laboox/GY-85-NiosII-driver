@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="imu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_trc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_w:the_nios_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_data_module:nios_nios2_qsys_0_dc_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_kdf1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_register_bank_a_module:nios_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4jg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_dvf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_read_pointer_counter" CBX_FILE_NAME="cntr_23j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_r:the_nios_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|lpm_add_sub:Add18" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_mult_cell:the_nios_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_s1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:read_pointer_counter" CBX_FILE_NAME="cntr_05j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_data_module:nios_nios2_qsys_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cjd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_tag_module:nios_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_dhh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_mult_cell:the_nios_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_s1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_j011.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_ocimem:the_nios_nios2_qsys_0_nios2_ocimem|nios_nios2_qsys_0_ociram_sp_ram_module:nios_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_v381.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_register_bank_b_module:nios_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5jg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_2r14.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|LPM_COUNTER:status_advance_pointer_counter" CBX_FILE_NAME="cntr_cgi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_mult_cell:the_nios_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_q1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_jp01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_qsc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_bht_module:nios_nios2_qsys_0_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_45h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_tag_module:nios_nios2_qsys_0_dc_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_2ng1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_victim_module:nios_nios2_qsys_0_dc_victim|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_r3d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_mult_cell:the_nios_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_q1u2.v"/>
+	</PROJECT>
+</LOG_ROOT>

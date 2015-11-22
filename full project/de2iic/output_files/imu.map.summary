@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jul 07 16:18:29 2015
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : imu
+Top-level Entity Name : imu
+Family : Cyclone IV E
+Total logic elements : 4,250
+    Total combinational functions : 3,491
+    Dedicated logic registers : 2,584
+Total registers : 2584
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 384,448
+Embedded Multiplier 9-bit elements : 4
+Total PLLs : 0

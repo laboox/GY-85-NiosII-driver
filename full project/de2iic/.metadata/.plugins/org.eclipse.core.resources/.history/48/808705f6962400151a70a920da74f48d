@@ -1,0 +1,13 @@
+/*
+ * HMC5883L.h
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: vaio
+ */
+
+#ifndef HMC5883L_H_
+#define HMC5883L_H_
+
+
+
+#endif /* HMC5883L_H_ */

@@ -1,0 +1,10 @@
+/*
+ * adxl345.c
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: vaio
+ */
+
+#include "adxl345.h"
+
+

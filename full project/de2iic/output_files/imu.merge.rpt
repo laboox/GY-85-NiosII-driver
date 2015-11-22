@@ -1,0 +1,424 @@
+Partition Merge report for imu
+Mon Jul 06 18:23:36 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Partition Pin Processing
+  7. Partition Merge Resource Usage Summary
+  8. Partition Merge RAM Summary
+  9. Partition Merge DSP Block Usage Summary
+ 10. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Partition Merge Summary                                                              ;
++------------------------------------+-------------------------------------------------+
+; Partition Merge Status             ; Successful - Mon Jul 06 18:23:35 2015           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; imu                                             ;
+; Top-level Entity Name              ; imu                                             ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 4,250                                           ;
+;     Total combinational functions  ; 3,491                                           ;
+;     Dedicated logic registers      ; 2,584                                           ;
+; Total registers                    ; 2584                                            ;
+; Total pins                         ; 15                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 384,448                                         ;
+; Embedded Multiplier 9-bit elements ; 4                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; pzdyqx:nabboc                  ; Auto-generated ; Source File       ; Source File            ; pzdyqx:nabboc                  ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                      ;
++-------+--------------+-----------+----------------+-------------------+-------------------+---------+
+; Name  ; Type         ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection ; Details ;
++-------+--------------+-----------+----------------+-------------------+-------------------+---------+
+; SCL   ; post-fitting ; connected ; Top            ; post-synthesis    ; SCL               ; N/A     ;
+; SCL   ; post-fitting ; connected ; Top            ; post-synthesis    ; SCL               ; N/A     ;
+; SDA   ; post-fitting ; connected ; Top            ; post-synthesis    ; SDA               ; N/A     ;
+; SDA   ; post-fitting ; connected ; Top            ; post-synthesis    ; SDA               ; N/A     ;
+; clock ; post-fitting ; connected ; Top            ; post-synthesis    ; clock             ; N/A     ;
++-------+--------------+-----------+----------------+-------------------+-------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                                      ;
++---------------------------------------------+--------+---------------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top    ; pzdyqx:nabboc ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+--------+---------------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 3602   ; 126           ; 243              ; 279                            ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Total combinational functions               ; 2964   ; 123           ; 225              ; 179                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;        ;               ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 1438   ; 57            ; 85               ; 79                             ; 0                              ;
+;     -- 3 input functions                    ; 1056   ; 19            ; 102              ; 44                             ; 0                              ;
+;     -- <=2 input functions                  ; 470    ; 47            ; 38               ; 56                             ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Logic elements by mode                      ;        ;               ;                  ;                                ;                                ;
+;     -- normal mode                          ; 2767   ; 119           ; 216              ; 158                            ; 0                              ;
+;     -- arithmetic mode                      ; 197    ; 4             ; 9                ; 21                             ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Total registers                             ; 2151   ; 72            ; 148              ; 213                            ; 0                              ;
+;     -- Dedicated logic registers            ; 2151   ; 72            ; 148              ; 213                            ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Virtual pins                                ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 15     ; 0             ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 4      ; 0             ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 384320 ; 0             ; 0                ; 128                            ; 0                              ;
+; Total RAM block bits                        ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1      ; 0             ; 0                ; 0                              ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Connections                                 ;        ;               ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 271    ; 74            ; 221              ; 314                            ; 0                              ;
+;     -- Registered Input Connections         ; 132    ; 30            ; 158              ; 233                            ; 0                              ;
+;     -- Output Connections                   ; 561    ; 4             ; 314              ; 1                              ; 0                              ;
+;     -- Registered Output Connections        ; 4      ; 3             ; 313              ; 0                              ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Internal Connections                        ;        ;               ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 23497  ; 566           ; 1573             ; 1263                           ; 0                              ;
+;     -- Registered Connections               ; 8807   ; 317           ; 1111             ; 731                            ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; External Connections                        ;        ;               ;                  ;                                ;                                ;
+;     -- Top                                  ; 196    ; 31            ; 380              ; 225                            ; 0                              ;
+;     -- pzdyqx:nabboc                        ; 31     ; 0             ; 47               ; 0                              ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 380    ; 47            ; 18               ; 90                             ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 225    ; 0             ; 90               ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Partition Interface                         ;        ;               ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 43     ; 11            ; 49               ; 61                             ; 0                              ;
+;     -- Output Ports                         ; 18     ; 4             ; 64               ; 14                             ; 0                              ;
+;     -- Bidir Ports                          ; 2      ; 0             ; 0                ; 0                              ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Registered Ports                            ;        ;               ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0      ; 3             ; 3                ; 9                              ; 0                              ;
+;     -- Registered Output Ports              ; 0      ; 3             ; 53               ; 5                              ; 0                              ;
+;                                             ;        ;               ;                  ;                                ;                                ;
+; Port Connectivity                           ;        ;               ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0      ; 0             ; 23               ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0      ; 0             ; 1                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0      ; 0             ; 1                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0      ; 0             ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0      ; 2             ; 2                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0      ; 0             ; 33               ; 5                              ; 0                              ;
++---------------------------------------------+--------+---------------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                                                                                                                                                                         ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+----------+--------------------------------------------+
+; Name                                                                                                                                                                                         ; Partition ; Type          ; Location ; Status                                     ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+----------+--------------------------------------------+
+; LCD_DATA[0]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[0]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[0]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[1]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[1]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[1]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[2]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[2]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[2]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[3]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[3]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[3]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[4]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[4]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[4]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[5]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[5]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[5]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[6]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[6]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[6]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_DATA[7]                                                                                                                                                                                  ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_DATA[7]                                                                                                                                                                           ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_DATA[7]~output                                                                                                                                                                    ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_E                                                                                                                                                                                        ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_E                                                                                                                                                                                 ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_E~output                                                                                                                                                                          ; Top       ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_RS                                                                                                                                                                                       ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_RS                                                                                                                                                                                ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_RS~output                                                                                                                                                                         ; Top       ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; LCD_RW                                                                                                                                                                                       ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- LCD_RW                                                                                                                                                                                ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- LCD_RW~output                                                                                                                                                                         ; Top       ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; SCL                                                                                                                                                                                          ; Top       ; Bidir Port    ; n/a      ;                                            ;
+;     -- SCL                                                                                                                                                                                   ; Top       ; Bidir Pad     ; Unplaced ; Synthesized                                ;
+;     -- SCL~output                                                                                                                                                                            ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; SDA                                                                                                                                                                                          ; Top       ; Bidir Port    ; n/a      ;                                            ;
+;     -- SDA                                                                                                                                                                                   ; Top       ; Bidir Pad     ; Unplaced ; Synthesized                                ;
+;     -- SDA~output                                                                                                                                                                            ; Top       ; Output Buffer ; Unplaced ; Preserved from Synthesis Netlist (WYSIWYG) ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; altera_reserved_tck                                                                                                                                                                          ; Top       ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tck                                                                                                                                                                   ; Top       ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tck~input                                                                                                                                                             ; Top       ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; altera_reserved_tdi                                                                                                                                                                          ; Top       ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tdi                                                                                                                                                                   ; Top       ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tdi~input                                                                                                                                                             ; Top       ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; altera_reserved_tdo                                                                                                                                                                          ; Top       ; Output Port   ; n/a      ;                                            ;
+;     -- altera_reserved_tdo                                                                                                                                                                   ; Top       ; Output Pad    ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tdo~output                                                                                                                                                            ; Top       ; Output Buffer ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; altera_reserved_tms                                                                                                                                                                          ; Top       ; Input Port    ; n/a      ;                                            ;
+;     -- altera_reserved_tms                                                                                                                                                                   ; Top       ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- altera_reserved_tms~input                                                                                                                                                             ; Top       ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; clock                                                                                                                                                                                        ; Top       ; Input Port    ; n/a      ;                                            ;
+;     -- clock                                                                                                                                                                                 ; Top       ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- clock~input                                                                                                                                                                           ; Top       ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_clr                                                                                                                              ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_ena                                                                                                                              ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_ir_in_0_                                                                                                                         ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_ir_out_0_                                                                                                                        ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_irq                                                                                                                              ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_jtag_state_cdr                                                                                                                   ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_jtag_state_sdr                                                                                                                   ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_jtag_state_udr                                                                                                                   ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_raw_tck                                                                                                                          ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_rti                                                                                                                              ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_shift                                                                                                                            ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_tck                                                                                                                              ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_tdi                                                                                                                              ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_tdo                                                                                                                              ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_update                                                                                                                           ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_jtag_uart_0_nios_jtag_uart_0_alt_jtag_atlantic_usr1                                                                                                                             ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_clr             ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ena             ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_0_        ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_in_1_        ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_0_       ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_ir_out_1_       ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cdr  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_cir  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1dr ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e1ir ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2dr ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_e2ir ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pdr  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_pir  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_rti  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdr  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sdrs ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sir  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_sirs ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_tlr  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_udr  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_jtag_state_uir  ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tck         ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_raw_tms         ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdi             ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_tdo             ; Top       ; Output Port   ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; jtag.bp.inst_nios2_qsys_0_the_nios_nios2_qsys_0_nios2_oci_the_nios_nios2_qsys_0_jtag_debug_module_wrapper_nios_nios2_qsys_0_jtag_debug_module_phy_sld_virtual_jtag_impl_inst_usr1            ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; laejrgibqjgjcajif0v92jmfv                                                                                                                                                                    ; Top       ; Input Port    ; n/a      ;                                            ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
+; reset                                                                                                                                                                                        ; Top       ; Input Port    ; n/a      ;                                            ;
+;     -- reset                                                                                                                                                                                 ; Top       ; Input Pad     ; Unplaced ; Synthesized                                ;
+;     -- reset~input                                                                                                                                                                           ; Top       ; Input Buffer  ; Unplaced ; Synthesized                                ;
+;                                                                                                                                                                                              ;           ;               ;          ;                                            ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------+---------------+----------+--------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Partition Merge Resource Usage Summary                    ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 4,250       ;
+;                                             ;             ;
+; Total combinational functions               ; 3491        ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 1659        ;
+;     -- 3 input functions                    ; 1221        ;
+;     -- <=2 input functions                  ; 611         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 3260        ;
+;     -- arithmetic mode                      ; 231         ;
+;                                             ;             ;
+; Total registers                             ; 2584        ;
+;     -- Dedicated logic registers            ; 2584        ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 15          ;
+; Total memory bits                           ; 384448      ;
+; Embedded Multiplier 9-bit elements          ; 4           ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 2469        ;
+; Total fan-out                               ; 25877       ;
+; Average fan-out                             ; 4.03        ;
++---------------------------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------+
+; Name                                                                                                                                                                                                                                                                                                              ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                           ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------+
+; nios:inst|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_r:the_nios_jtag_uart_0_scfifo_r|scfifo:rfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1|ALTSYNCRAM                                                                                             ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                          ;
+; nios:inst|nios_jtag_uart_0:jtag_uart_0|nios_jtag_uart_0_scfifo_w:the_nios_jtag_uart_0_scfifo_w|scfifo:wfifo|scfifo_jr21:auto_generated|a_dpfifo_q131:dpfifo|dpram_nl21:FIFOram|altsyncram_r1m1:altsyncram1|ALTSYNCRAM                                                                                             ; AUTO ; Simple Dual Port ; 64           ; 8            ; 64           ; 8            ; 512    ; None                                          ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_bht_module:nios_nios2_qsys_0_bht|altsyncram:the_altsyncram|altsyncram_45h1:auto_generated|ALTSYNCRAM                                                                                                                                                   ; AUTO ; Simple Dual Port ; 256          ; 2            ; 256          ; 2            ; 512    ; nios_nios2_qsys_0_bht_ram.mif                 ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_data_module:nios_nios2_qsys_0_dc_data|altsyncram:the_altsyncram|altsyncram_kdf1:auto_generated|ALTSYNCRAM                                                                                                                                           ; AUTO ; Simple Dual Port ; 512          ; 32           ; 512          ; 32           ; 16384  ; None                                          ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_tag_module:nios_nios2_qsys_0_dc_tag|altsyncram:the_altsyncram|altsyncram_2ng1:auto_generated|ALTSYNCRAM                                                                                                                                             ; AUTO ; Simple Dual Port ; 64           ; 9            ; 64           ; 9            ; 576    ; nios_nios2_qsys_0_dc_tag_ram.mif              ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_dc_victim_module:nios_nios2_qsys_0_dc_victim|altsyncram:the_altsyncram|altsyncram_r3d1:auto_generated|ALTSYNCRAM                                                                                                                                       ; AUTO ; Simple Dual Port ; 8            ; 32           ; 8            ; 32           ; 256    ; None                                          ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_data_module:nios_nios2_qsys_0_ic_data|altsyncram:the_altsyncram|altsyncram_cjd1:auto_generated|ALTSYNCRAM                                                                                                                                           ; AUTO ; Simple Dual Port ; 1024         ; 32           ; 1024         ; 32           ; 32768  ; None                                          ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_ic_tag_module:nios_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram|altsyncram_dhh1:auto_generated|ALTSYNCRAM                                                                                                                                             ; AUTO ; Simple Dual Port ; 128          ; 14           ; 128          ; 14           ; 1792   ; nios_nios2_qsys_0_ic_tag_ram.mif              ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_nios2_ocimem:the_nios_nios2_qsys_0_nios2_ocimem|nios_nios2_qsys_0_ociram_sp_ram_module:nios_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram|altsyncram_v381:auto_generated|ALTSYNCRAM ; AUTO ; Single Port      ; 256          ; 32           ; --           ; --           ; 8192   ; nios_nios2_qsys_0_ociram_default_contents.mif ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_register_bank_a_module:nios_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram|altsyncram_4jg1:auto_generated|ALTSYNCRAM                                                                                                                           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; nios_nios2_qsys_0_rf_ram_a.mif                ;
+; nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_register_bank_b_module:nios_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram|altsyncram_5jg1:auto_generated|ALTSYNCRAM                                                                                                                           ; AUTO ; Simple Dual Port ; 32           ; 32           ; 32           ; 32           ; 1024   ; nios_nios2_qsys_0_rf_ram_b.mif                ;
+; nios:inst|nios_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram|altsyncram_trc1:auto_generated|ALTSYNCRAM                                                                                                                                                                                              ; AUTO ; Single Port      ; 10024        ; 32           ; --           ; --           ; 320768 ; nios_onchip_memory2_0.hex                     ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_2r14:auto_generated|ALTSYNCRAM                                                                                                             ; AUTO ; Simple Dual Port ; 64           ; 2            ; 64           ; 2            ; 128    ; None                                          ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-----------------------------------------------+
+
+
++-----------------------------------------------------+
+; Partition Merge DSP Block Usage Summary             ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 2           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 4           ;
+; Signed Embedded Multipliers           ; 1           ;
+; Unsigned Embedded Multipliers         ; 1           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Partition Merge
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Jul 06 18:23:27 2015
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off imu -c imu --merge=on
+Info (35007): Using synthesis netlist for partition "Top"
+Info (35007): Using synthesis netlist for partition "pzdyqx:nabboc"
+Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
+Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info (35024): Succesfully connected in-system debug instance "auto_signaltap_0" to all 5 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info (35002): Resolved and merged 4 partition(s)
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 4902 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21060): Implemented 2 bidirectional pins
+    Info (21061): Implemented 4579 logic cells
+    Info (21064): Implemented 299 RAM segments
+    Info (21062): Implemented 4 DSP elements
+Info: Quartus II 64-Bit Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 485 megabytes
+    Info: Processing ended: Mon Jul 06 18:23:37 2015
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:06
+
+

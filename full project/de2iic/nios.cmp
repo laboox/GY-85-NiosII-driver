@@ -1,0 +1,19 @@
+	component nios is
+		port (
+			clk_clk                          : in    std_logic                    := 'X';             -- clk
+			reset_reset_n                    : in    std_logic                    := 'X';             -- reset_n
+			lcd_16207_0_external_RS          : out   std_logic;                                       -- RS
+			lcd_16207_0_external_RW          : out   std_logic;                                       -- RW
+			lcd_16207_0_external_data        : inout std_logic_vector(7 downto 0) := (others => 'X'); -- data
+			lcd_16207_0_external_E           : out   std_logic;                                       -- E
+			iic_controller_0_inout_scl_in    : in    std_logic                    := 'X';             -- scl_in
+			iic_controller_0_inout_scl_outen : out   std_logic;                                       -- scl_outen
+			iic_controller_0_inout_sda_in    : in    std_logic                    := 'X';             -- sda_in
+			iic_controller_0_inout_sda_out   : out   std_logic;                                       -- sda_out
+			iic_controller_0_inout_sda_outen : out   std_logic;                                       -- sda_outen
+			iic_controller_0_inout_always0   : in    std_logic                    := 'X';             -- always0
+			iic_controller_0_inout_scl_out   : out   std_logic;                                       -- scl_out
+			iic_controller_0_inout_always1   : in    std_logic                    := 'X'              -- always1
+		);
+	end component nios;
+

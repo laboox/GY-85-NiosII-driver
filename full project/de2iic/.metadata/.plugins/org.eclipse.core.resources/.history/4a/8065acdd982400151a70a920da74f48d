@@ -1,0 +1,31 @@
+/*
+ * adxl345.c
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: vaio
+ */
+
+#include "adxl345.h"
+
+int adxl_read2(unsigned char reg){
+    unsigned char DY0,DY1;
+    i2c_write(0xA6,1,0);
+    i2c_write(reg,0,0);
+    i2c_write(0xA7,1,0);
+    DY0 = i2c_read(0,0,1);
+    DY1 = i2c_read(0,1,0);
+    return (DY1<<8 | DY0);
+}
+
+unsigned char adxl_read(unsigned char reg){
+    unsigned char DY0;
+    i2c_write(0xA6,1,0);
+	i2c_write(reg,0,0);
+	i2c_write(0xA7,1,0);
+	DY0 = i2c_read(0,1,0);
+	return DY0;
+}
+
+void adxl_write(unsigned char reg, unsigned char data)
+
+

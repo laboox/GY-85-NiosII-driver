@@ -1,0 +1,39 @@
+
+State Machine - |imu|nios:inst|i2c_master_top:iic_controller_0|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |imu|nios:inst|i2c_master_top:iic_controller_0|i2c_master_byte_ctrl:byte_controller|i2c_master_bit_ctrl:bit_controller|c_state
+Name c_state.idle c_state.wr_d c_state.wr_c c_state.wr_b c_state.wr_a c_state.rd_d c_state.rd_c c_state.rd_b c_state.rd_a c_state.stop_d c_state.stop_c c_state.stop_b c_state.stop_a c_state.start_e c_state.start_d c_state.start_c c_state.start_b c_state.start_a 
+c_state.idle 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.start_a 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+c_state.start_b 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+c_state.start_c 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 
+c_state.start_d 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+c_state.start_e 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+c_state.stop_a 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+c_state.stop_b 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+c_state.stop_c 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+c_state.stop_d 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+c_state.rd_a 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 
+c_state.rd_b 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 
+c_state.rd_c 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 
+c_state.rd_d 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.wr_a 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.wr_b 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.wr_c 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+c_state.wr_d 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+State Machine - |imu|nios:inst|nios_nios2_qsys_0:nios2_qsys_0|nios_nios2_qsys_0_nios2_oci:the_nios_nios2_qsys_0_nios2_oci|nios_nios2_qsys_0_jtag_debug_module_wrapper:the_nios_nios2_qsys_0_jtag_debug_module_wrapper|nios_nios2_qsys_0_jtag_debug_module_tck:the_nios_nios2_qsys_0_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

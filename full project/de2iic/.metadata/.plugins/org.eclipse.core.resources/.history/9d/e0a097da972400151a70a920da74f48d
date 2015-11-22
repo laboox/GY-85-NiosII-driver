@@ -1,0 +1,13 @@
+/*
+ * i2c_controller.h
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: vaio
+ */
+
+#ifndef I2C_CONTROLLER_H_
+#define I2C_CONTROLLER_H_
+
+
+
+#endif /* I2C_CONTROLLER_H_ */

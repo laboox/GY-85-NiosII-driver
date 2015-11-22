@@ -1,0 +1,37 @@
+/*
+ * itg3205.h
+ *
+ *  Created on: Jul 11, 2015
+ *      Author: Sina Labbaf
+ */
+
+#ifndef ITG3205_H_
+#define ITG3205_H_
+
+#include "i2c_controller.h"
+// Gyroscope ITG3200
+#define GYRO_W 0xD0
+#define GYRO_R 0xD1
+
+#define G_SMPLRT_DIV 0x15
+#define G_DLPF_FS 0x16
+#define G_INT_CFG 0x17
+#define G_PWR_MGM 0x3E
+#define G_TO_READ 8 // 2 bytes for each axis x, y, z
+// offsets are chip specific.
+short g_offx = 0;
+short g_offy = 0;
+short g_offz = 0;
+short hx, hy, hz, turetemp;
+
+//////////// Transmission Functions: ///////////////
+
+void writeTo(unsigned char address, unsigned char val);
+//reads num bytes starting from address register on ACC in to buff array
+void readFrom(unsigned char address, int num, unsigned char buff[]);
+
+////////// GYROSCOPE INITIALIZATION //////////
+void initGyro();
+void getGyroscopeData(short * result);
+
+#endif /* ITG3205_H_ */

@@ -1,0 +1,16 @@
+/*
+ * adxl345.c
+ *
+ *  Created on: Jul 7, 2015
+ *      Author: vaio
+ */
+
+#include "adxl345.h"
+
+int adxl_read2(unsigned char reg);
+
+unsigned char adxl_read(unsigned char reg);
+
+void adxl_write(unsigned char reg, unsigned char data);
+
+

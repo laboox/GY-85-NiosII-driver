@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="305" key="DIALOG_WIDTH"/>
+		<item value="371" key="DIALOG_Y_ORIGIN"/>
+		<item value="444" key="DIALOG_HEIGHT"/>
+		<item value="1224" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="alpha_z" key="selection"/>
+		<list key="findhistory">
+			<item value="hz"/>
+			<item value="hy"/>
+			<item value="hx"/>
+			<item value="z_axis"/>
+			<item value="Y_axis"/>
+			<item value="X_axis"/>
+			<item value="byte"/>
+			<item value="IIC_CONTROLLER_BASE"/>
+		</list>
+		<list key="replacehistory">
+			<item value="alpha_z"/>
+			<item value="alpha_y"/>
+			<item value="alpha_x"/>
+			<item value="mag_z"/>
+			<item value="mag_y"/>
+			<item value="mag_x"/>
+			<item value="unsigned char"/>
+		</list>
+	</section>
+</section>
